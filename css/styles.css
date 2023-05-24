@@ -55,6 +55,11 @@ button {
 .link {
   text-decoration: none;
 }
+*:hover,
+*:focus {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 /*-----------header----------*/
 .header {
   border-bottom: 1px solid var(--color_border);
@@ -113,8 +118,14 @@ button {
 
 /*-----------section-1-----------*/
 .sectionone-studio {
-  background-color: var(--color_two);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/studio/people-office.jpg);
+  max-width: 1440px;
   padding: 188px 0;
+  margin: 0 auto;
 }
 .titleone-studio {
   font-weight: 700;
@@ -223,6 +234,8 @@ button {
   flex-basis: calc((100% - 3 * 24px) / 4);
   background-color: var(--color_white);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .person {
   padding: 32px 16px;
@@ -244,12 +257,16 @@ button {
   display: flex;
   gap: 24px;
 }
-.round {
+.item-round {
   width: 40px;
   height: 40px;
-  background: #4d5ae5;
+  background: var(--color_blue);
   border-radius: 50%;
   position: relative;
+}
+.item-team:hover .item-round,
+.item-team:focus .item-round {
+  background: var(--color-accent);
 }
 .logoweb-studio {
   width: 16px;
@@ -279,9 +296,19 @@ button {
 }
 .item-customers {
   width: calc((100% - 5 * 24px) / 6);
+}
+.link-customers {
   padding: 16px 32px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  color: #8e8f99;
+}
+.link-customers:hover {
+  color: #404bbf;
+  border-color: #404bbf;
+}
+.icon-customers {
+  fill: currentColor;
 }
 /*------------footer------------*/
 .footer {
@@ -353,6 +380,31 @@ button {
 }
 .item-projects {
   width: calc((100% - 48px) / 3);
+}
+.item-projects:hover,
+.item-projects:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+.text-overlay {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 40px;
+  position: absolute;
+  width: 360px;
+  height: 300px;
+  color: var(--color_white_two);
+  background-color: var(--color_blue);
+  transition: transform 250ms ease-in-out;
+}
+
+.link-projects:hover .text-overlay,
+.link-projects:focus .text-overlay {
+  transform: translateY(-100%);
 }
 .category {
   padding: 32px 16px;
