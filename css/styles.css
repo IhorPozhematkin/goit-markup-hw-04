@@ -590,7 +590,7 @@ button {
 .close-window:hover,
 .close-window:focus {
   color: #ffffff;
-  background-color: #e7e9fc;
+  background-color: var(--color-accent);
   border: none;
 }
 .icon-close {
