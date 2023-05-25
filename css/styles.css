@@ -304,6 +304,8 @@ button {
 }
 .icon-socialmedia {
   fill: var(--color_white_two);
+  width: 16px;
+  height: 16px;
 }
 .item-team:hover .item-round,
 .item-team:focus .item-round {
