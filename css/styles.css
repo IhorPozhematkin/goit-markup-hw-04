@@ -63,6 +63,8 @@ button {
 /*-----------header----------*/
 .header {
   border-bottom: 1px solid var(--color_border);
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .container-flex {
   display: flex;
@@ -160,9 +162,42 @@ button {
 .button-studio:focus {
   background-color: var(--color-accent);
 }
+.backdrop {
+  position: fixed;
+  width: 1440px;
+  height: 100vh;
+  background-color: #2e2f42;
+  top: 0;
+  visibility: visible;
+  opacity: 0.5;
+  transform: translatex(-156px);
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fcfcfc;
+  width: 50%;
+  height: 50%;
+  opacity: 1;
+}
+
+.close-window {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 /*-----------------section-2-----------------*/
 .sectiontwo-studio {
   padding: 120px 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .titletwo-studio,
 .titleone-portfolio {
@@ -201,6 +236,8 @@ button {
 /*-------------section-3------------*/
 .sectionthree-studio {
   padding-bottom: 120px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .titletwo-sectionthree {
   font-weight: 700;
@@ -223,6 +260,8 @@ button {
 .sectionfour-studio {
   background-color: var(--color_white_two);
   padding: 120px 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .titletwo-sectionfour {
   margin-bottom: 72px;
@@ -287,6 +326,8 @@ button {
 /*-------------section-5------------*/
 .sectionfive-studio {
   padding: 120px 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .titletwo-sectionfive {
   font-weight: 700;
@@ -324,6 +365,8 @@ button {
 .footer {
   background-color: var(--color_two);
   padding: 100px 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .info-footer {
   margin-right: 120px;
@@ -369,6 +412,8 @@ button {
 /*----------------------main-portfolio---------------*/
 .section-portfolio {
   padding: 96px 0 120px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 /*-------------buttons-------------*/
 .list-buttonportfolio {
