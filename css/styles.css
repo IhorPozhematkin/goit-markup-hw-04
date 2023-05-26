@@ -7,17 +7,12 @@
   --color_border: #e7e9fc;
   --color_blue: #4d5ae5;
   --color-accent: #404bbf;
-  --font-family: "Roboto", sans-serif;
-  --font-family_logo: "Raleway", sans-serif;
-  --font-size: 16px;
-  --line-height: 1.5;
-  --letter-spacing: 0.02em;
 }
 body {
-  font-family: var(--font-family);
-  font-size: var(--font-size);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--color);
   background-color: var(--color_white);
 }
@@ -55,16 +50,9 @@ button {
 .link {
   text-decoration: none;
 }
-*:hover,
-*:focus {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 /*-----------header----------*/
 .header {
   border-bottom: 1px solid var(--color_border);
-  max-width: 1440px;
-  margin: 0 auto;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -76,7 +64,7 @@ button {
   align-items: center;
 }
 .link-logo {
-  font-family: var(--font-family_logo);
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -97,6 +85,7 @@ button {
   font-weight: 500;
   color: var(--color_two);
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-menu:hover,
 .link-menu:focus {
@@ -144,7 +133,8 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/studio/people-office.jpg);
+    url(../images/studio/people-office.jpg);
+  height: 600px;
   max-width: 1440px;
   padding: 188px 0;
   margin: 0 auto;
@@ -181,8 +171,6 @@ button {
 /*-----------------section-2-----------------*/
 .sectiontwo-studio {
   padding: 120px 0;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 .titletwo-studio,
 .titleone-portfolio {
@@ -212,29 +200,26 @@ button {
   height: 112px;
   background: #f4f4fd;
   border-radius: 4px;
-  padding: 24px 100px;
   margin-bottom: 8px;
 }
 .titlethree-skills {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: 0.02em;
   color: var(--color_two);
   margin-bottom: 8px;
 }
 /*-------------section-3------------*/
 .sectionthree-studio {
   padding-bottom: 120px;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 .titletwo-sectionthree {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color_two);
   margin-bottom: 72px;
@@ -250,8 +235,6 @@ button {
 .sectionfour-studio {
   background-color: var(--color_white_two);
   padding: 120px 0;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 .titletwo-sectionfour {
   margin-bottom: 72px;
@@ -259,7 +242,7 @@ button {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color_two);
 }
@@ -281,7 +264,7 @@ button {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: 0.02em;
   color: var(--color_two);
   margin-bottom: 8px;
   text-align: center;
@@ -330,15 +313,13 @@ button {
 /*-------------section-5------------*/
 .sectionfive-studio {
   padding: 120px 0;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 .titletwo-sectionfive {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color_two);
   margin-bottom: 72px;
@@ -356,7 +337,6 @@ button {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   color: #8e8f99;
-  padding: 16px 32px;
   align-items: center;
   justify-content: center;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -375,8 +355,6 @@ button {
 .footer {
   background-color: var(--color_two);
   padding: 100px 0;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 .container-flex-footer {
   display: flex;
@@ -443,8 +421,6 @@ button {
 /*----------------------main-portfolio---------------*/
 .section-portfolio {
   padding: 96px 0 120px;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 /*-------------buttons-------------*/
 .list-buttonportfolio {
@@ -455,8 +431,8 @@ button {
 }
 .button-portfolio {
   font-weight: 500;
-  font-size: var(--font-size);
-  line-height: var(--line-height);
+  font-size: 16px;
+  line-height: 1.5;
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
@@ -532,7 +508,7 @@ button {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: 0.02em;
   color: var(--color_two);
   margin-bottom: 8px;
 }
